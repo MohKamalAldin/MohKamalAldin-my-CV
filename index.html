@@ -10,11 +10,13 @@
             background-color: #f0f4f8;
             color: #333;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 20px auto;
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -26,7 +28,7 @@
 
         h1 {
             font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         h2 {
@@ -34,10 +36,6 @@
             margin-bottom: 10px;
             border-bottom: 2px solid #003366;
             padding-bottom: 5px;
-        }
-
-        p, ul {
-            margin-bottom: 10px;
         }
 
         .personal-info {
@@ -50,23 +48,12 @@
             height: 150px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .contact-info {
+            margin-top: 10px;
         }
 
-        ul li {
-            margin-bottom: 5px;
-        }
-
-        .section-title {
-            color: #003366;
-            font-weight: bold;
-        }
-
-        .highlight {
-            color: #003366;
-            font-weight: bold;
+        .contact-info p {
+            margin: 5px 0;
         }
 
         a {
@@ -77,19 +64,49 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .section-title {
+            color: #003366;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            color: #003366;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .education p, .experience p, .extracurricular p {
+            margin-bottom: 10px;
+        }
+
+        .references {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-
         <!-- Personal Information -->
         <div class="personal-info">
             <img src="path-to-your-image.jpg" alt="Mohamed Kamal Eldin">
             <h1>Mohamed Kamal Eldin</h1>
             <p><strong>Senior BIM Architect</strong></p>
-            <p>Pyramids Gardens, Giza, Egypt | (+2) 01144797634 | <a href="mailto:Moh.kamal.k@outlook.com">Moh.kamal.k@outlook.com</a></p>
-            <p><a href="https://www.linkedin.com/in/mohkkhedr">LinkedIn</a> | <a href="https://www.behance.net/mohkamal">Behance</a></p>
+            <div class="contact-info">
+                <p>Pyramids Gardens, Giza, Egypt</p>
+                <p>(+2) 01144797634</p>
+                <p><a href="mailto:Moh.kamal.k@outlook.com">Moh.kamal.k@outlook.com</a></p>
+                <p><a href="https://www.linkedin.com/in/mohkkhedr">LinkedIn</a> | <a href="https://www.behance.net/mohkamal">Behance</a></p>
+            </div>
         </div>
 
         <!-- Professional Summary -->
@@ -98,15 +115,14 @@
 
         <!-- Education -->
         <h2>Education</h2>
-        <p><span class="highlight">BSc in Architectural Engineering</span><br> Faculty of Engineering, Cairo University<br> Graduation Year: 2017</p>
-        <p>Accumulative Grade: Very Good</p>
-        <p><span class="highlight">High School Diploma</span><br> El-Orman School<br> Graduation Year: 2012</p>
-        <p>Total Grade: 410 (100%)</p>
+        <p><span class="highlight">BSc in Architectural Engineering</span><br>Faculty of Engineering, Cairo University<br>Graduation Year: 2017<br>Accumulative Grade: Very Good</p>
+        <p><span class="highlight">High School Diploma</span><br>El-Orman School<br>Graduation Year: 2012<br>Total Grade: 410 (100%)</p>
 
         <!-- Work Experience -->
         <h2>Work Experience</h2>
 
-        <p><span class="highlight">BIM Architect</span><br> OCC Weavers – Cairo Back Office (Art Lines for Design Services)<br> January 2024 – Present</p>
+        <!-- Job 1 -->
+        <p><span class="highlight">BIM Architect</span><br>OCC Weavers – Cairo Back Office (Art Lines for Design Services)<br>January 2024 – Present</p>
         <ul>
             <li>Led the development of BIM models for industrial and commercial buildings, ensuring compliance with LOD 400 standards.</li>
             <li>Produced architectural design packages and shop drawings for both tender and detailed design phases.</li>
@@ -115,29 +131,52 @@
         </ul>
         <p><strong>Key Projects:</strong> Poultry Processing Plant 4, Hail, KSA – Almarai: 26,000 m², Budget: 55 million SAR</p>
 
-        <!-- Add more experience sections as per the CV... -->
+        <!-- Job 2 -->
+        <p><span class="highlight">BIM Coordinator</span><br>EDC Consultant Office<br>January 2019 – November 2019</p>
+        <ul>
+            <li>Coordinated BIM deliverables across multi-disciplinary teams, including structural, MEP, and architectural trades.</li>
+            <li>Ensured that models adhered to BIM standards and that data integrity was maintained throughout project phases.</li>
+        </ul>
+
+        <!-- Job 3 -->
+        <p><span class="highlight">Teaching Assistant (Part-time)</span><br>Pyramids Higher Institute (PHI)<br>September 2017 – June 2019</p>
+        <ul>
+            <li>Delivered lectures and practical sessions on architectural design, urban planning, and digital tools such as AutoCAD and Revit.</li>
+        </ul>
+
+        <!-- Job 4 -->
+        <p><span class="highlight">Architect</span><br>EMDAD for Designs & Consultancies<br>November 2019 – January 2021</p>
+        <ul>
+            <li>Developed design concepts, technical drawings, and project specifications for residential and commercial projects.</li>
+        </ul>
 
         <!-- Skills -->
-        <h2>Language and Technical Skills</h2>
+        <h2>Skills</h2>
         <p><span class="highlight">Languages:</span></p>
         <ul>
             <li>English: Full Professional Proficiency</li>
             <li>Arabic: Native Proficiency</li>
         </ul>
-        <p><span class="highlight">Software Proficiency:</span></p>
+        <p><span class="highlight">Technical Skills:</span></p>
         <ul>
             <li>AutoCAD, Revit, SketchUp, Photoshop, Dynamo, MS Office, Lumion, V-Ray for 3DsMax</li>
         </ul>
 
-        <!-- Certifications -->
+        <!-- Certifications & Training -->
         <h2>Certifications & Training</h2>
-        <p>Construction Project Management – EHAF@CIC</p>
-        <p>BIM Process Optimization – AVC (Archi Vision Consulting)</p>
+        <p><span class="highlight">Construction Project Management – EHAF@CIC</span></p>
+        <p><span class="highlight">BIM Process Optimization – AVC (Archi Vision Consulting)</span></p>
 
         <!-- Extracurricular Activities -->
         <h2>Extracurricular Activities</h2>
-        <p>Co-Founder – Be Positive Initiative</p>
-        <p>Volunteer – Egyptian Food Bank</p>
+        <p><span class="highlight">Co-Founder – Be Positive Initiative</span></p>
+        <ul>
+            <li>Led a community-driven initiative aimed at promoting positive mental health and social responsibility through events and workshops.</li>
+        </ul>
+        <p><span class="highlight">Volunteer – Egyptian Food Bank</span></p>
+        <ul>
+            <li>Participated in food distribution and donation drives, supporting the bank’s mission to alleviate hunger in underprivileged communities.</li>
+        </ul>
 
         <!-- References -->
         <h2>References</h2>
