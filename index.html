@@ -101,14 +101,14 @@
 
         /* Hyperlinks */
         a {
-            color: rgb(28, 121, 184);
+            color: #d93b3b; /* Make hyperlinks distinct from main titles */
+            text-decoration: none;
             font-weight: bold;
-            text-decoration: underline;
         }
 
         a:hover {
-            color: #0056b3;
-            text-decoration: none;
+            color: #e85050; /* Highlight on hover */
+            text-decoration: underline;
         }
 
         /* Section Separators */
@@ -131,6 +131,12 @@
 
         .key-projects a:hover {
             color: #0056b3;
+        }
+
+        /* Highlighted University and Graduation Date */
+        .highlighted {
+            font-weight: bold;
+            color: rgb(28, 121, 184);
         }
 
         /* Media Query for Responsiveness */
@@ -172,8 +178,8 @@
 
         <!-- Education -->
         <h2>Education</h2>
-        <p><span class="highlight">BSc in Architectural Engineering</span><br>Faculty of Engineering, Cairo University<br>Graduation Year: 2017<br>Accumulative Grade: Very Good</p>
-        <p><span class="highlight">High School Diploma</span><br>El-Orman School<br>Graduation Year: 2012<br>Total Grade: 410 (100%)</p>
+        <p><span class="highlighted">BSc in Architectural Engineering</span><br>Faculty of Engineering, <span class="highlighted">Cairo University</span><br>Graduation Year: <span class="highlighted">2017</span><br>Accumulative Grade: Very Good</p>
+        <p><span class="highlighted">High School Diploma</span><br>El-Orman School<br>Graduation Year: <span class="highlighted">2012</span><br>Total Grade: 410 (100%)</p>
 
         <!-- Section Separator -->
         <div class="section-separator"></div>
@@ -182,7 +188,7 @@
         <h2>Work Experience</h2>
 
         <!-- Job 1 -->
-        <p><span class="company-name"><a href="https://www.artlines.com" target="_blank">OCC Weavers – Cairo Back Office (Art Lines for Design Services)</a></span><br>January 2024 – Present</p>
+        <p><span class="company-name"><a href="https://www.occweaversltd.com/" target="_blank">OCC Weavers – Cairo Back Office (Art Lines for Design Services)</a></span><br>January 2024 – Present</p>
         <ul>
             <li>Led the development of BIM models for industrial and commercial buildings, ensuring compliance with LOD 400 standards.</li>
             <li>Produced architectural design packages and shop drawings for both tender and detailed design phases.</li>
@@ -196,11 +202,11 @@
         </div>
 
         <!-- Job 2 -->
-        <p><span class="company-name"><a href="https://www.solidconstruction.com" target="_blank">Solid Construction</a></span><br>January 2023 – January 2024</p>
+        <p><span class="company-name"><a href="https://solidegypt.com/" target="_blank">Solid Construction</a></span><br>January 2023 – January 2024</p>
         <ul>
             <li>Developed architectural and structural BIM models up to LOD 500 for large-scale residential and commercial projects.</li>
             <li>Managed cross-disciplinary coordination, ensuring the timely submission of architectural shop drawings.</li>
-            <li>Collaborated with stakeholders, including consultants and owners, to resolve design challenges and finalize shop drawings.</li>
+                      <li>Collaborated with stakeholders, including consultants and owners, to resolve design challenges and finalize shop drawings.</li>
             <li>Managed material submittals, ensuring compliance with specifications, BOQ, and project requirements.</li>
         </ul>
         <p><strong>Key Projects:</strong></p>
@@ -209,7 +215,7 @@
         </div>
 
         <!-- Job 3 -->
-        <p><span class="company-name"><a href="https://www.solidconstruction.com" target="_blank">Solid Construction</a></span><br>January 2021 – January 2023</p>
+        <p><span class="company-name"><a href="https://solidegypt.com/" target="_blank">Solid Construction</a></span><br>January 2021 – January 2023</p>
         <ul>
             <li>Acted as the liaison between consultants and owners, ensuring all project documentation met required standards and deadlines.</li>
             <li>Managed submittals, time schedules, and shop drawings, ensuring efficient approval and coordination between stakeholders.</li>
@@ -222,6 +228,18 @@
 
         <!-- Section Separator -->
         <div class="section-separator"></div>
+
+        <!-- Job 4 -->
+        <p><span class="company-name"><a href="https://www.emdaddesign.com/" target="_blank">EMDAD for Designs & Consultancies</a></span><br>November 2019 – January 2021</p>
+        <ul>
+            <li>Produced architectural shop drawings and coordinated with various disciplines for large-scale medical and infrastructure projects.</li>
+            <li>Conducted project studies to identify missing data, aligning architectural and structural models to minimize design issues.</li>
+        </ul>
+        <p><strong>Key Projects:</strong></p>
+        <div class="key-projects">
+            <p><a href="https://www.behance.net/gallery/207117755/Behavioral-care-specialist-hospital-KSA-Shopdrawings" target="_blank">Behavioral Care Specialist Hospital, KSA – Stantec</a>: 26,000 m², Budget: 55 million SAR</p>
+            <p><a href="https://www.behance.net/moodboard/214867527/Aljouf-airport-working-drawings" target="_blank">Aljouf Airport, KSA – GACA</a>: 40,000 m², Budget: 400 million SAR</p>
+        </div>
 
         <!-- Internships -->
         <h2>Internships</h2>
