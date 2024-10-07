@@ -17,98 +17,92 @@
         /* Body Styling */
         body {
             font-family: 'Novocento Wide', sans-serif;
-            background-color: #f4f7fc;
+            background-color: #f0f4f8; /* Light blue background */
             color: #333;
             line-height: 1.6;
             padding: 0;
             margin: 0;
         }
 
-        /* Container */
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        /* Main Layout */
+        .layout {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        /* Titles & Subtitles */
-        h1, h2 {
-            font-family: 'Novocento Wide', sans-serif;
-            font-weight: 700; /* Demibold for titles */
-            color: rgb(28, 121, 184); /* Custom theme color */
+        /* Fixed Left-Side Picture and Personal Info */
+        .sidebar {
+            width: 250px;
+            background-color: #1c79b8; /* Dark blue shade */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
         }
 
-        h1 {
-            font-size: 2rem; /* Reduced title size */
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.6rem; /* Reduced subtitle size */
-            margin-bottom: 5px;
-            border-bottom: 2px solid rgb(28, 121, 184); /* Red/Green/Blue Border */
-            padding-bottom: 5px;
-        }
-
-        /* Personal Info */
-        .personal-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .personal-info img {
+        .sidebar img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             object-fit: cover;
+            margin-bottom: 15px;
         }
 
-        .contact-info {
+        .sidebar h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
             margin-top: 10px;
         }
 
-        .contact-info p {
-            margin: 5px 0;
-            font-size: 1.1rem;
+        .sidebar a:hover {
+            text-decoration: underline;
         }
 
-        .contact-info a {
-            color: rgb(28, 121, 184);
-            text-decoration: none;
-            font-weight: bold;
+        /* Scrollable Content */
+        .content {
+            margin-left: 250px; /* Matches the sidebar width */
+            overflow-y: auto;
+            padding: 20px;
+            height: 100vh;
         }
 
-        .contact-info a:hover {
-            color: #0056b3;
+        /* Titles & Subtitles */
+        h2 {
+            font-weight: 700; /* Demibold for titles */
+            color: #1c79b8; /* Darker shade of blue */
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+            border-bottom: 2px solid #1c79b8; 
+            padding-bottom: 5px;
+        }
+
+        p, ul, li {
+            font-weight: 400; /* Normal weight for body text */
+            margin-top: 5px;
+            margin-bottom: 15px;
         }
 
         /* Company Names */
         .company-name {
-            font-size: 1.2rem; /* Larger font size */
+            font-size: 1.2rem;
             font-weight: bold;
-            color: rgb(28, 121, 184);
-        }
-
-        /* Body Text */
-        p, ul, li {
-            font-family: 'Novocento Wide', sans-serif;
-            font-weight: 400; /* Normal weight for body text */
-            margin-top: 5px;
-            margin-bottom: 10px;
-        }
-
-        /* Hyperlinks */
-        a {
-            color: #d93b3b; /* Make hyperlinks distinct from main titles */
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #e85050; /* Highlight on hover */
-            text-decoration: underline;
+            color: #1c79b8;
         }
 
         /* Section Separators */
@@ -117,188 +111,102 @@
             margin: 20px 0;
         }
 
-        /* Projects & Key Details */
-        .key-projects {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .key-projects a {
-            font-size: 1.1rem;
+        /* Hyperlinks */
+        a {
+            color: #1c79b8;
             font-weight: bold;
-            color: rgb(28, 121, 184);
+            text-decoration: none;
         }
 
-        .key-projects a:hover {
-            color: #0056b3;
+        a:hover {
+            color: #0e4d7a;
         }
 
-        /* Highlighted University and Graduation Date */
+        /* Highlighted Items */
         .highlighted {
             font-weight: bold;
-            color: rgb(28, 121, 184);
+            color: #1c79b8;
         }
 
         /* Media Query for Responsiveness */
         @media only screen and (max-width: 768px) {
-            .container {
-                padding: 20px;
-                max-width: 90%;
+            .sidebar {
+                width: 100px;
             }
 
-            h1 {
-                font-size: 1.8rem;
+            .content {
+                margin-left: 100px;
+                padding: 10px;
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Personal Information -->
-        <div class="personal-info">
-            <img src="https://github.com/MohKamalAldin/MohKamalAldin.github.io/blob/main/profile_picture.jpg" alt="Mohamed Kamal Eldin">
+    <div class="layout">
+        <!-- Sidebar with Profile Picture -->
+        <div class="sidebar">
+            <img src="https://github.com/MohKamalAldin/MohKamalAldin.github.io/raw/main/profile_picture.jpg" alt="Mohamed Kamal Eldin">
             <h1>Mohamed Kamal Eldin</h1>
-            <p><strong>Senior BIM Architect</strong></p>
-            <div class="contact-info">
-                <p>Pyramids Gardens, Giza, Egypt</p>
-                <p>(+2) 01144797634</p>
-                <p><a href="mailto:Moh.kamal.k@outlook.com">Moh.kamal.k@outlook.com</a></p>
-                <p><a href="https://www.linkedin.com/in/mohkkhedr" target="_blank">LinkedIn</a> | <a href="https://www.behance.net/mohkamal" target="_blank">Behance</a></p>
-            </div>
+            <p>Senior BIM Architect</p>
+            <p>Pyramids Gardens, Giza, Egypt</p>
+            <p><a href="mailto:Moh.kamal.k@outlook.com">Moh.kamal.k@outlook.com</a></p>
+            <p><a href="https://www.linkedin.com/in/mohkkhedr" target="_blank">LinkedIn</a> | <a href="https://www.behance.net/mohkamal" target="_blank">Behance</a></p>
         </div>
 
-        <!-- Professional Summary -->
-        <h2>Professional Summary</h2>
-        <p>Senior BIM Architect with 6+ years of experience in developing detailed BIM models, leading cross-discipline coordination, and producing shop drawings for large-scale projects across medical, industrial, and residential sectors. Expertise in Autodesk Revit, AutoCAD, and project management, with a focus on LOD 400/500 standards. Proven track record of optimizing BIM processes, reducing design conflicts, and delivering projects on time and within scope.</p>
+        <!-- Scrollable Main Content -->
+        <div class="content">
+            <!-- Professional Summary -->
+            <h2>Professional Summary</h2>
+            <p>Senior BIM Architect with 6+ years of experience in developing detailed BIM models, leading cross-discipline coordination, and producing shop drawings for large-scale projects across medical, industrial, and residential sectors. Expertise in Autodesk Revit, AutoCAD, and project management, with a focus on LOD 400/500 standards. Proven track record of optimizing BIM processes, reducing design conflicts, and delivering projects on time and within scope.</p>
 
-        <!-- Education -->
-        <h2>Education</h2>
-        <p><span class="highlighted">BSc in Architectural Engineering</span><br>Faculty of Engineering, <span class="highlighted">Cairo University</span><br>Graduation Year: <span class="highlighted">2017</span><br>Accumulative Grade: Very Good</p>
-        <p><span class="highlighted">High School Diploma</span><br>El-Orman School<br>Graduation Year: <span class="highlighted">2012</span><br>Total Grade: 410 (100%)</p>
+            <!-- Education -->
+            <h2>Education</h2>
+            <p><span class="highlighted">BSc in Architectural Engineering</span><br>Faculty of Engineering, <span class="highlighted">Cairo University</span><br>Graduation Year: <span class="highlighted">2017</span><br>Accumulative Grade: Very Good</p>
+            <p><span class="highlighted">High School Diploma</span><br>El-Orman School<br>Graduation Year: <span class="highlighted">2012</span><br>Total Grade: 410 (100%)</p>
 
-        <!-- Section Separator -->
-        <div class="section-separator"></div>
+            <!-- Section Separator -->
+            <div class="section-separator"></div>
 
-        <!-- Work Experience -->
-        <h2>Work Experience</h2>
+            <!-- Work Experience -->
+            <h2>Work Experience</h2>
 
-        <!-- Job 1 -->
-        <p><span class="company-name"><a href="https://www.occweaversltd.com/" target="_blank">OCC Weavers – Cairo Back Office (Art Lines for Design Services)</a></span><br>January 2024 – Present</p>
-        <ul>
-            <li>Led the development of BIM models for industrial and commercial buildings, ensuring compliance with LOD 400 standards.</li>
-            <li>Produced architectural design packages and shop drawings for both tender and detailed design phases.</li>
-            <li>Coordinated with various disciplines to resolve design conflicts and ensure alignment and project timeline adherence.</li>
-            <li>Assisted in tender phases by preparing quantity take-offs and submitting RFIs to clarify project scope.</li>
-        </ul>
-        <p><strong>Key Projects:</strong></p>
-        <div class="key-projects">
-            <p><a href="https://www.behance.net/gallery/207738785/Almarai-Poultry-processing-plant-Design-and-build" target="_blank">Poultry Processing Plant 4, Hail, KSA – Almarai</a>: 26,000 m², Budget: 55 million SAR</p>
-            <p><a href="https://www.behance.net/gallery/207113655/June-north-coast-shopdrawings" target="_blank">Poseidon Project Sea Food, KAEC, KSA – Almarai</a>: 40,000 m², Budget: 400 million SAR</p>
+            <!-- Job 1 -->
+            <p><span class="company-name"><a href="https://www.occweaversltd.com/" target="_blank">OCC Weavers – Cairo Back Office (Art Lines for Design Services)</a></span><br>January 2024 – Present</p>
+            <ul>
+                <li>Led the development of BIM models for industrial and commercial buildings, ensuring compliance with LOD 400 standards.</li>
+                <li>Produced architectural design packages and shop drawings for both tender and detailed design phases.</li>
+                <li>Coordinated with various disciplines to resolve design conflicts and ensure alignment and project timeline adherence.</li>
+                <li>Assisted in tender phases by preparing quantity take-offs and submitting RFIs to clarify project scope.</li>
+            </ul>
+
+            <!-- Add additional work experience (e.g. EDC) as required -->
+
+            <!-- Section Separator -->
+            <div class="section-separator"></div>
+
+            <!-- Certifications & Training -->
+            <h2>Certifications & Training</h2>
+            <p><span class="highlighted">Construction Project Management – EHAF@CIC</span></p>
+            <p><span class="highlighted">BIM Process Optimization – AVC (Archi Vision Consulting)</span></p>
+            <p><span class="highlighted">Entrepreneurship – Pathways</span></p>
+
+            <!-- Extracurricular Activities -->
+            <h2>Extracurricular Activities</h2>
+            <p><span class="highlighted">Co-Founder – Be Positive Initiative</span></p>
+            <ul>
+                <li>Logistics & Fundraising Member – PAZ Online Academy</li>
+                <li>Volunteer – Egyptian Food Bank</li>
+            </ul>
+
+            <!-- References -->
+            <h2>References</h2>
+            <p>Available upon request</p>
         </div>
-
-        <!-- Job 2 -->
-        <p><span class="company-name"><a href="https://solidegypt.com/" target="_blank">Solid Construction</a></span><br>January 2023 – January 2024</p>
-        <ul>
-            <li>Developed architectural and structural BIM models up to LOD 500 for large-scale residential and commercial projects.</li>
-            <li>Managed cross-disciplinary coordination, ensuring the timely submission of architectural shop drawings.</li>
-                      <li>Collaborated with stakeholders, including consultants and owners, to resolve design challenges and finalize shop drawings.</li>
-            <li>Managed material submittals, ensuring compliance with specifications, BOQ, and project requirements.</li>
-        </ul>
-        <p><strong>Key Projects:</strong></p>
-        <div class="key-projects">
-            <p><a href="https://www.behance.net/gallery/207113655/June-north-coast-shopdrawings" target="_blank">June - North Coast – Palm Hills</a>: 146,000 m², Budget: 600 million EGP</p>
-        </div>
-
-        <!-- Job 3 -->
-        <p><span class="company-name"><a href="https://solidegypt.com/" target="_blank">Solid Construction</a></span><br>January 2021 – January 2023</p>
-        <ul>
-            <li>Acted as the liaison between consultants and owners, ensuring all project documentation met required standards and deadlines.</li>
-            <li>Managed submittals, time schedules, and shop drawings, ensuring efficient approval and coordination between stakeholders.</li>
-            <li>Submitted material submittals in collaboration with procurement and specifications departments to prevent project delays.</li>
-        </ul>
-        <p><strong>Key Projects:</strong></p>
-        <div class="key-projects">
-            <p><a href="https://www.behance.net/moodboard/214868631/Badya" target="_blank">BADYA Creative City – Palm Hills</a>: Budget: 600 million EGP</p>
-        </div>
-
-        <!-- Section Separator -->
-        <div class="section-separator"></div>
-
-        <!-- Job 4 -->
-        <p><span class="company-name"><a href="https://www.emdaddesign.com/" target="_blank">EMDAD for Designs & Consultancies</a></span><br>November 2019 – January 2021</p>
-        <ul>
-            <li>Produced architectural shop drawings and coordinated with various disciplines for large-scale medical and infrastructure projects.</li>
-            <li>Conducted project studies to identify missing data, aligning architectural and structural models to minimize design issues.</li>
-        </ul>
-        <p><strong>Key Projects:</strong></p>
-        <div class="key-projects">
-            <p><a href="https://www.behance.net/gallery/207117755/Behavioral-care-specialist-hospital-KSA-Shopdrawings" target="_blank">Behavioral Care Specialist Hospital, KSA – Stantec</a>: 26,000 m², Budget: 55 million SAR</p>
-            <p><a href="https://www.behance.net/moodboard/214867527/Aljouf-airport-working-drawings" target="_blank">Aljouf Airport, KSA – GACA</a>: 40,000 m², Budget: 400 million SAR</p>
-        </div>
-
-        <!-- Internships -->
-        <h2>Internships</h2>
-        <p><span class="company-name"><a href="http://www.avc-eg.com/home.php" target="_blank">AVC (Archi Vision Consulting)</a></span> – Intern<br>July 2016 – August 2016</p>
-        <ul>
-            <li>Conducted site visits for projects including Zayed Club and the Egyptian Banking Institute.</li>
-            <li>Assisted with architectural and interior design work for the Cairo University Annex and Sohag Olympic City.</li>
-        </ul>
-
-        <p><span class="company-name"><a href="https://alyraafat.com" target="_blank">Inter-Consult Office (Prof. Aly Raafat)</a></span> – Junior Architect Intern<br>July 2015 – August 2015</p>
-        <ul>
-            <li>Worked on the design of residential compound units and assisted in the work process under Prof. Aly Raafat.</li>
-        </ul>
-
-        <!-- Language and Technical Skills -->
-        <h2>Language and Technical Skills</h2>
-        <p><span class="highlight">Languages:</span></p>
-        <ul>
-            <li>English: Full Professional Proficiency</li>
-            <li>Arabic: Native Proficiency</li>
-        </ul>
-
-        <p><span class="highlight">Software Proficiency:</span></p>
-        <ul>
-            <li>AutoCAD, Revit, SketchUp, Photoshop, Dynamo, MS Office, Lumion, V-Ray for 3DsMax</li>
-        </ul>
-
-        <p><span class="highlight">BIM Management:</span></p>
-        <ul>
-            <li>Development of architectural and structural BIM models, shop drawings, and cross-disciplinary coordination</li>
-        </ul>
-
-        <p><span class="highlight">Project Management:</span></p>
-        <ul>
-            <li>Time scheduling, material submittals, RFI/RFP submissions, and stakeholder coordination</li>
-        </ul>
-
-        <p><span class="highlight">Quantity Surveying:</span></p>
-        <ul>
-            <li>QS schedules, Bill of Quantities preparation, and project documentation review</li>
-        </ul>
-
-        <!-- Certifications -->
-        <h2>Certifications & Training</h2>
-        <p><span class="highlight">Construction Project Management – EHAF@CIC</span></p>
-        <p><span class="highlight">BIM Process Optimization – AVC (Archi Vision Consulting)</span></p>
-        <p><span class="highlight">Entrepreneurship – Pathways</span></p>
-
-        <!-- Extracurricular Activities -->
-        <h2>Extracurricular Activities</h2>
-        <p><span class="highlight">Co-Founder – Be Positive Initiative</span></p>
-        <ul>
-            <li>Logistics & Fundraising Member – PAZ Online Academy</li>
-            <li>Volunteer – Egyptian Food Bank</li>
-        </ul>
-
-        <!-- References -->
-        <h2>References</h2>
-        <p>Available upon request</p>
     </div>
 
 </body>
