@@ -3,151 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Kamal Eldin - Resume</title>
+    <title>Mohamed Kamal - Architect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        header, section, footer {
-            margin-bottom: 20px;
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
         }
-        h1 {
-            font-size: 28px;
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            left: calc(50% - 75px);
+            border: 3px solid white;
         }
-        h2 {
-            font-size: 24px;
-            margin-top: 15px;
+        header h1 {
+            margin-top: 180px;
         }
-        h3 {
-            font-size: 20px;
+        .contact-info {
+            text-align: center;
             margin-top: 10px;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
         }
-        li {
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        .section-content {
+            padding: 10px;
+        }
+        .section-content p {
             margin-bottom: 10px;
         }
-        a {
-            color: blue;
-            text-decoration: underline;
+        .experience, .education, .skills {
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-
     <header>
+        <img src="path_to_your_image.jpg" alt="Mohamed Kamal Photo">
         <h1>Mohamed Kamal Eldin</h1>
-        <p>Senior BIM Architect | Pyramids Gardens, Giza, Egypt | (+2) 01144797634 | <a href="mailto:moh.kamal.k@outlook.com">Moh.kamal.k@outlook.com</a></p>
-        <p><a href="https://www.linkedin.com/in/mohkkhedr/">LinkedIn</a> | <a href="https://www.behance.net/mohkamal">Behance</a></p>
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/mohkkhedr/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.behance.net/mohkamal" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </header>
 
-    <section>
-        <h2>Professional Summary</h2>
-        <p>Senior BIM Architect with 6+ years of experience in developing detailed BIM models, leading cross-discipline coordination, and producing shop drawings for large-scale projects across medical, industrial, and residential sectors. Expertise in Autodesk Revit, AutoCAD, and project management, with a focus on LOD 400/500 standards. Proven track record of optimizing BIM processes, reducing design conflicts, and delivering projects on time and within scope.</p>
+    <section class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content">
+            <p>Architect with experience in urban design and construction management. My passion lies in designing sustainable urban spaces while ensuring practicality and innovation.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>BSc in Architectural Engineering</strong> - Faculty of Engineering, Cairo University (Graduation Year: 2017) <a href="http://eng.cu.edu.eg/en/">Cairo University</a></li>
-            <li><strong>High School Diploma</strong> - El-Orman School (Graduation Year: 2012), Total Grade: 410 (100%)</li>
-        </ul>
+    <section class="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-content">
+            <p><strong>EDC Consultant Office</strong> – January 2019 to November 2019</p>
+            <p>Worked as an architect focusing on urban construction management and design consultation.</p>
+            
+            <p><strong>PHI (Pyramids Higher Institute)</strong> – September 2017 to June 2019</p>
+            <p>Assisted in academic research and projects related to sustainable architecture and urban design.</p>
+            
+            <p><strong>EMDAD for Designs & Consultancies</strong> – November 2019 to January 2021</p>
+            <p>Worked on a variety of projects with a focus on sustainability and green urban development.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <h3>BIM Architect - OCC Weavers (Art Lines for Design Services)</h3>
-        <p>January 2024 – Present | <a href="https://www.occweaversltd.com/">OCC Weavers</a></p>
-        <ul>
-            <li>Led the development of BIM models for industrial and commercial buildings, ensuring compliance with LOD 400 standards.</li>
-            <li>Produced architectural design packages and shop drawings for both tender and detailed design phases.</li>
-            <li>Coordinated with various disciplines to resolve design conflicts and ensure project timeline adherence.</li>
-            <li>Prepared quantity take-offs and submitted RFIs for scope clarification during tender phases.</li>
-            <li>Key Projects:
-                <ul>
-                    <li><strong>Poultry Processing Plant 4, Hail, KSA – Almarai</strong>: 26,000 m², Budget: 55 million SAR <a href="https://www.behance.net/gallery/207738785/Almarai-Poultry-processing-plant-Design-and-build">View Project</a></li>
-                    <li><strong>Poseidon Project Sea Food, KAEC, KSA – Almarai</strong>: 40,000 m², Budget: 400 million SAR</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h3>Senior BIM Architect - Solid Construction</h3>
-        <p>January 2023 – January 2024 | <a href="https://solidegypt.com/">Solid Construction</a></p>
-        <ul>
-            <li>Developed architectural and structural BIM models up to LOD 500 for large-scale residential and commercial projects.</li>
-            <li>Managed cross-disciplinary coordination, ensuring the timely submission of architectural shop drawings.</li>
-            <li>Key Projects:
-                <ul>
-                    <li><strong>June - North Coast – Palm Hills</strong>: 146,000 m², Budget: 600 million EGP <a href="https://www.behance.net/gallery/207113655/June-north-coast-shopdrawings">View Project</a></li>
-                </ul>
-            </li>
-        </ul>
-
-        <h3>Technical Office Architect – Site-Based - Solid Construction</h3>
-        <p>January 2021 – January 2023</p>
-        <ul>
-            <li>Acted as liaison between consultants and owners, ensuring all project documentation met standards.</li>
-            <li>Managed submittals, schedules, and shop drawings, ensuring timely approvals and coordination.</li>
-            <li>Key Projects:
-                <ul>
-                    <li><strong>BADYA Creative City – Palm Hills</strong>: Budget: 600 million EGP</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h3>Technical Office Architect - EMDAD for Designs & Consultancies</h3>
-        <p>November 2019 – January 2021 | <a href="https://www.emdaddesign.com/">EMDAD</a></p>
-        <ul>
-            <li>Produced architectural shop drawings and coordinated across disciplines for large-scale medical and infrastructure projects.</li>
-            <li>Key Projects:
-                <ul>
-                    <li><strong>Behavioral Care Specialist Hospital, KSA</strong>: 26,000 m², Budget: 55 million SAR <a href="https://www.behance.net/gallery/207117755/Behavioral-care-specialist-hospital-KSA-Shopdrawings">View Project</a></li>
-                    <li><strong>Aljouf Airport, KSA</strong>: 40,000 m², Budget: 400 million SAR <a href="https://www.behance.net/moodboard/214867527/Aljouf-airport-working-drawings">View Project</a></li>
-                </ul>
-            </li>
-        </ul>
+    <section class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="section-content">
+            <p><strong>Bachelor of Architecture</strong> – Graduated in 2017</p>
+            <p>Major in Urban Design and Sustainable Architecture</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Skills & Proficiencies</h2>
-        <ul>
-            <li>Languages: English (Full Professional Proficiency), Arabic (Native Proficiency)</li>
-            <li>Software Proficiency: 
-                <ul>
-                    <li>AutoCAD, Revit, SketchUp, Photoshop, Dynamo, Lumion, V-Ray for 3DsMax, MS Office</li>
-                </ul>
-            </li>
-            <li>BIM Management: Development of architectural and structural BIM models, shop drawings, and cross-disciplinary coordination</li>
-            <li>Project Management: Time scheduling, material submittals, RFI/RFP submissions, and stakeholder coordination</li>
-            <li>Quantity Surveying: QS schedules, Bill of Quantities preparation, and project documentation review</li>
-        </ul>
+    <section class="projects">
+        <h2 class="section-title">Notable Projects</h2>
+        <div class="section-content">
+            <p><strong>Thesis:</strong> Concrete and Green: The Impact of Urban Construction on City Characteristics and the Potential of Rewilding</p>
+            <p>Incorporating international urban projects like the Cheonggyecheon River restoration project.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Certifications & Training</h2>
-        <ul>
-            <li><strong>Construction Project Management</strong> – EHAF@CIC <a href="https://www.cic-cairo.com/">CIC Cairo</a></li>
-            <li><strong>BIM Process Optimization</strong> – AVC (Archi Vision Consulting) <a href="http://www.avc-eg.com/home.php">AVC</a></li>
-            <li><strong>Entrepreneurship</strong> – <a href="http://pathways.cu.edu.eg/index.html">Pathways</a></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Extracurricular Activities</h2>
-        <ul>
-            <li>Co-Founder – Be Positive Initiative</li>
-            <li>Logistics & Fundraising Member – PAZ Online Academy</li>
-            <li>Volunteer – Egyptian Food Bank</li>
-        </ul>
+    <section class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-content">
+            <p><strong>Software:</strong> AutoCAD, Revit, SketchUp, Adobe Photoshop</p>
+            <p><strong>Languages:</strong> English, Arabic</p>
+        </div>
     </section>
 
     <footer>
-        <p>References available upon request.</p>
+        <p>&copy; 2024 Mohamed Kamal Eldin</p>
     </footer>
-
 </body>
 </html>
